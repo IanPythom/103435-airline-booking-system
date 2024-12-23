@@ -31,7 +31,13 @@ Follow these steps to set up and run the project on your local machine:
    python manage.py migrate
    ```
 
-5. **Run the Development Server**:
+5. **Create a Superuser**:
+   ```bash
+   python manage.py createsuperuser
+   ```
+   Follow the prompts to set up a username, email, and password for the superuser.
+
+6. **Run the Development Server**:
    ```bash
    python manage.py runserver
    ```
