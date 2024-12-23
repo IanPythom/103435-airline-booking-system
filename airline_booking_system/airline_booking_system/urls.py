@@ -16,8 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+
+def homepage(request):
+    return HttpResponse("Welcome to the Airline Booking System API!")
 
 urlpatterns = [
+    path('', homepage),  # Add this at the end of the urlpatterns
     path('admin/', admin.site.urls),
     path('api/', include('bookings.urls')),
 ]
