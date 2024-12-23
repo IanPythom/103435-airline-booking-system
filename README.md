@@ -76,7 +76,7 @@ Follow these steps to set up and run the project on your local machine:
 - POST:
   ![Passengers POST](AirlineBookingPostman/POST-passenger.png)
 - PUT:
-  ![Passengers PUT](AirlineBookingPostman/PUT-passenger.png)
+  ![Passengers PUT](AirlineBookingPostman/PUT-passengers.png)
 - DELETE:
   ![Passengers DELETE](AirlineBookingPostman/DELETE-passenger.png)
 
