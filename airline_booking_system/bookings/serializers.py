@@ -7,8 +7,8 @@ class FlightSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class PassengerSerializer(serializers.ModelSerializer):
-    flight = FlightSerializer(read_only=True)
-
     class Meta:
         model = Passenger
-        fields = '__all__'
+        fields = ['id', 'first_name', 'last_name', 'email', 'phone_number', 'flight']
+
+    flight = serializers.PrimaryKeyRelatedField(queryset=Flight.objects.all())
